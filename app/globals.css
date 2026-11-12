@@ -27,3 +27,7 @@ h2{font-family:var(--font-editorial);font-weight:400;letter-spacing:-.035em;font
 @media(max-width:850px){.site-nav{height:68px}.hero{padding-top:23px}.hero-grid{min-height:auto;gap:44px}.hero h1{font-size:clamp(3.15rem,7.2vw,5.1rem)}.hero-art{height:440px}.section{padding-block:88px}}
 @media(max-width:560px){.hero h1{font-size:clamp(2.58rem,9.3vw,3.65rem);line-height:1.07}.hero-lead{font-size:1.16rem}.hero-secondary{font-size:1.02rem}.hero-art{height:360px}.section{padding-block:76px}h2{font-size:clamp(2.75rem,10vw,3.7rem)}.service-card>p{font-size:1rem}}
 @media(max-width:360px){.hero h1{font-size:2.45rem}}
+
+.nav-logo{display:block;width:47px;height:31px;flex:none;color:var(--charcoal)}
+.hero-logo{display:block;width:103px;height:68px;color:var(--white)}
+.footer-logo{display:block;width:70px;height:46px;color:var(--white)}
