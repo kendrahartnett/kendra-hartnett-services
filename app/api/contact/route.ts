@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
   const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
   const limit = await rateLimit(ip);
   if (limit === 'limited') return NextResponse.json({ error: 'Too many inquiries. Please try again later.' }, { status: 429 });
-  if (limit === 'unavailable' && process.env.NODE_ENV === 'production') return NextResponse.json({ error: 'The form is temporarily unavailable. Please try again later.' }, { status: 503 });
+  if (limit === 'unavailable') return NextResponse.json({ error: 'The form is temporarily unavailable. Please try again later.' }, { status: 503 });
   const { RESEND_API_KEY, CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL } = process.env;
   if (!RESEND_API_KEY || !CONTACT_TO_EMAIL || !CONTACT_FROM_EMAIL) return NextResponse.json({ error: 'The form is temporarily unavailable. Please try again later.' }, { status: 503 });
   const { name, email, company, service, project } = parsed.data;
