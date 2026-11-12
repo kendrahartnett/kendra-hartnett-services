@@ -30,4 +30,4 @@ The contact form mentions Stripe as the accepted provider for agreed project fee
 
 ## Deployment
 
-Deploy as a Node-compatible Next.js application. Configure all environment variables in the host, verify the sender domain, and confirm the shared rate limit service works before publishing. The site uses local Space Grotesk and Inter assets through `next/font/local`.
+Deploy as a Node-compatible Next.js application. Configure all environment variables in the host, verify the sender domain, and confirm the shared rate limit service works before publishing. The site bundles Space Grotesk, Inter, DM Serif Display, and IBM Plex Mono through `next/font/local`.
