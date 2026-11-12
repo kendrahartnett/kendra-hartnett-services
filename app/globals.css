@@ -31,3 +31,11 @@ h2{font-family:var(--font-editorial);font-weight:400;letter-spacing:-.035em;font
 .nav-logo{display:block;width:47px;height:31px;flex:none;color:var(--charcoal)}
 .hero-logo{display:block;width:103px;height:68px;color:var(--white)}
 .footer-logo{display:block;width:70px;height:46px;color:var(--white)}
+
+/* A shorter path through the page and a real editorial About image. */
+.hero-grid{min-height:520px}.hero-micro{margin-top:34px}.hero-foot{height:54px}
+.section{padding-block:84px}.service-grid{margin-top:38px}.service-card{min-height:390px}.card-top{margin-bottom:34px}.service-card>p{min-height:0}.service-card ul{margin-top:20px;padding-top:18px}.services-note{margin-top:25px}
+.process-grid{margin-top:54px}
+.about-grid{gap:clamp(42px,8vw,120px)}.about-photo{position:relative;min-height:580px;overflow:hidden;border:1px solid var(--silver);background:var(--cloud)}.about-photo img{object-fit:cover;object-position:center}.about-photo-caption{position:absolute;left:20px;bottom:20px;z-index:1;background:rgba(255,255,255,.92);padding:9px 12px;font:400 .61rem var(--font-technical);letter-spacing:.08em}.about-copy h2{margin-bottom:38px}.about-copy>p:not(.section-label){max-width:560px;font-size:1.08rem;line-height:1.8;margin-bottom:27px}.about-copy .about-opening{font-size:1.25rem!important;line-height:1.55!important;color:var(--charcoal)!important}.about-copy .text-link{margin-top:14px}
+@media(max-width:850px){.hero-grid{min-height:auto}.section{padding-block:76px}.about-photo{min-height:460px;max-width:640px;width:100%}}
+@media(max-width:560px){.section{padding-block:68px}.hero-micro{margin-top:28px}.service-card{min-height:0}.about-photo{min-height:410px}.about-copy h2{margin-bottom:26px}.about-copy>p:not(.section-label){font-size:1rem;line-height:1.75;margin-bottom:22px}.about-copy .about-opening{font-size:1.14rem!important}}
