@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ArrowDownRight, ArrowRight, ArrowUpRight, Blocks, Bot, Code2 } from 'lucide-react';
+import { ArrowDownRight, ArrowUpRight, Blocks, Bot, Code2 } from 'lucide-react';
 import { Nav } from '@/components/nav';
 import { Reveal } from '@/components/reveal';
 import { ContactForm } from '@/components/contact-form';
@@ -40,11 +40,9 @@ export default function Home() {
           </Reveal>
           <Reveal direction="right" delay={0.18} className="hero-art">
             <div className="art-top"><span>KH / 001</span><span>SYSTEMS, SIMPLIFIED</span></div>
-            <div className="art-frame">
-              <div className="art-orbit orbit-one" /><div className="art-orbit orbit-two" />
-              <div className="art-core"><LogoMark className="hero-logo" /></div>
-              <span className="art-node node-one" /><span className="art-node node-two" /><span className="art-node node-three" />
-              <div className="art-caption">Design <ArrowRight size={13} /> Develop <ArrowRight size={13} /> Improve</div>
+            <div className="art-frame art-image-frame">
+              <Image src="/images/business-workflow-hero.png" alt="Business documents, schedules, customer information, and reporting connected through one digital workspace" fill priority sizes="(max-width: 850px) 100vw, 38vw" />
+              <LogoMark className="hero-image-logo" />
             </div>
             <div className="art-bottom"><span>INDEPENDENT PRACTICE</span><span>EST. 2026 &nbsp; ↗</span></div>
           </Reveal>
